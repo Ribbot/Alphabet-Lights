@@ -1,10 +1,6 @@
 # Alphabet-Lights
 Alphabet Lights is a recreation of the Christmas light wall from Stranger Things season 1.
 
-# Example
-The following example shows the behavior of the lights when the phrase "RUN" is sent using the GUI.
-![](EX_GUI.jpg) ![](EX_Lights.gif)
-
 # Hardware Used
 1. 50 bulb strand of 5V WS2811 RGB LED Pixels https://www.amazon.com/gp/product/B01AG923GI/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1
 2. 5V 8A AC/DC Converter https://www.amazon.com/gp/product/B00MHV7576/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1
@@ -26,6 +22,10 @@ A Windows Forms GUI is used to send commands to the Arduino Nano. There are four
 The Arduino Nano receives these commands over a USB serial connection with the Windows laptop. The Arduino program parses incoming commands and uses the FastLED library to send the corresponding outputs to the array of LEDs over a digital I/O port. 
 
 A 5V 8A power adapter is used to step down the voltage from a wall connection and convert it from AC to DC. This adapter powers the array of LEDs.
+
+# Example
+The following example shows the behavior of the lights when the phrase "RUN" is sent using the GUI.
+![](EX_GUI.jpg) ![](EX_Lights.gif)
 
 # Future Improvements
 1. The GUI could include additional functions to give the user more control over the LEDs (brightness control, different color patterns, etc.)
